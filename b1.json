@@ -1,0 +1,249 @@
+{
+  "course": "Info B",
+  "sheet_number": 1,
+
+  "exercises" : [
+    {
+      "points": 20,
+      "text": "Sichtbarkeit",
+      "subtasks": [
+        {
+          "text": "01-05",
+          "points": 5
+        },
+        {
+          "text": "06-10",
+          "points": 5
+        },
+        {
+          "text": "11-15",
+          "points": 5
+        },
+        {
+          "text": "Call-by-value vs Call-by-reference",
+          "points": 5
+        }
+      ]
+    },
+    {
+      "points": 30,
+      "text": "Fibonacci",
+      "subtasks": [
+        {
+          "text": "Datenfelder nMinus1 + nMinus2",
+          "points": 2
+        },
+        {
+          "text": "beide private",
+          "points": 2
+        },
+        {
+          "text": "im Konstruktor initialisiert",
+          "points": 2
+        },
+        {
+          "text": "Methode next, fn = fn-1 + fn-2, nMinus1/2 neu",
+          "points": 4
+        },
+        {
+          "text": "FibonacciPrint mit Ausgabe bei Fehler",
+          "points": 3
+        },
+        {
+          "text": "Anleitung/Help",
+          "points": 2
+        },
+        {
+          "text": "einlesen Kommandozeilenparam (parseInt)",
+          "points": 3
+        },
+        {
+          "text": "Formatierung Output",
+          "points": 4
+        },
+        {
+          "text": "mit printf",
+          "points": 4
+        },
+        {
+          "text": "JavaDoc, sprechende Varnamen etc.",
+          "points": 4
+        }
+      ]
+    },
+    {
+      "points": 30,
+      "text": "Fraction",
+      "subtasks": [
+        {
+          "text": "Numer + Denom private",
+          "points": 1
+        },
+        {
+          "text": "Konstruktor ein Arg",
+          "points": 1
+        },
+        {
+          "text": "Verkettung mit anderem Konstruktor",
+          "points": 2
+        },
+        {
+          "text": "Konstruktor zwei Args",
+          "points": 2
+        },
+        {
+          "text": "Prüfen Nenner 0",
+          "points": 1
+        },
+        {
+          "text": "ggT erzeugen",
+          "points": 1
+        },
+        {
+          "text": "VZ-Test (auch implizit durch ggT)",
+          "points": 2
+        },
+        {
+          "text": "Zuweisung, teilen durch GG ",
+          "points": 2
+        },
+        {
+          "text": "Multipl mit int, fraction, vielen frcts",
+          "points": 3
+        },
+        {
+          "text": "Dividieren durch andere Fraction",
+          "points": 1
+        },
+        {
+          "text": "Jeweils neue Fraction",
+          "points": 2
+        },
+        {
+          "text": "toString",
+          "points": 1
+        },
+        {
+          "text": "FractionTest alles durchprobiert (auch kürzen + VZ)",
+          "points": 4
+        },
+        {
+          "text": "\textit{automatische Tests}",
+          "points": 4
+        },
+        {
+          "text": "JavaDoc, sprechende Varnamen etc.",
+          "points": 4
+        }
+
+      ]
+    },
+    {
+      "points": 20,
+      "text": "Fragen",
+      "subtasks": [
+        {
+          "text": "OO != OOP",
+          "points": 4
+        },
+        {
+          "text": "Klasse, Objekt/Instanz",
+          "points": 4
+        },
+        {
+          "text": "Klassenvariable, Instanzvariable",
+          "points": 2
+        },
+        {
+          "text": "Klassenmethode, Instanzmethode",
+          "points": 2
+        },
+        {
+          "text": "Identität von einem Objekt (this + this.)",
+          "points": 2
+        },
+        {
+          "text": "Methodenkopf + Rumpf",
+          "points": 2
+        },
+        {
+          "text": "Methodensignatur",
+          "points": 2
+        },
+        {
+          "text": "Formaler vs aktueller Parameter",
+          "points": 2
+        }
+
+      ]
+    }
+  ],
+
+  "groups": [
+    {
+      "date": "Di, 11:00",
+      "name1": "Freya Berstermann",
+      "name2": "Irina Vortkamp"
+    },
+    {
+      "date": "Di, 11:30",
+      "name1": "Felix Nardmann",
+      "name2": "Benjamin Tolksdorf"
+    },
+    {
+      "date": "Di, 14:00",
+      "name1": "Daniel Stattkus",
+      "name2": "Rene Brinkhege"
+    },
+    {
+      "date": "Di, 14:30",
+      "name1": "Daniel Pohl",
+      "name2": "Bianca Krömer"
+    },
+    {
+      "date": "Di, 16:00",
+      "name1": "Darren Kopatz",
+      "name2": "Alexander Miller"
+    },
+    {
+      "date": "Di, 11:00",
+      "name1": "Freya Berstermann",
+      "name2": "Irina Vortkamp"
+    },
+    {
+      "date": "Di, 11:30",
+      "name1": "Felix Nardmann",
+      "name2": "Benjamin Tolksdorf"
+    },
+    {
+      "date": "Di, 14:00",
+      "name1": "Daniel Stattkus",
+      "name2": "Rene Brinkhege"
+    },
+    {
+      "date": "Di, 14:30",
+      "name1": "Daniel Pohl",
+      "name2": "Bianca Krömer"
+    },
+    {
+      "date": "Di, 16:00",
+      "name1": "Darren Kopatz",
+      "name2": "Alexander Miller"
+    },
+    {
+      "date": "Di, 14:00",
+      "name1": "Daniel Stattkus",
+      "name2": "Rene Brinkhege"
+    },
+    {
+      "date": "Di, 14:30",
+      "name1": "Daniel Pohl",
+      "name2": "Bianca Krömer"
+    },
+    {
+      "date": "Di, 16:00",
+      "name1": "Darren Kopatz",
+      "name2": "Alexander Miller"
+    }
+  ]
+}

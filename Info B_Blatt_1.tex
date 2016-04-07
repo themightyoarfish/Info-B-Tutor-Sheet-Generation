@@ -1,0 +1,74 @@
+
+  \documentclass[a4paper, 10pt, landscape]{scrartcl}
+  \usepackage[utf8]{inputenc}
+  \usepackage[ngerman]{babel}
+  \usepackage{amsfonts}
+  \usepackage{amssymb}
+  \usepackage{amsmath}
+  \usepackage{geometry}
+  \usepackage{longtable}
+  \usepackage{colortbl}
+  \usepackage{xcolor}
+
+  \geometry{a4paper,left=1cm,right=1cm, top=1cm, bottom=1cm}
+  \pagenumbering{gobble}
+
+  \begin{document}
+\ttfamily \huge{Info B} Testat Blatt 1
+      \small 
+\begin{longtable}{|p{6cm}|c|c|c|c|c|c|c|c|c|c|c|c|c|c|p{8cm}|}\hline
+& \textbf{P} & \textbf{G1} & \textbf{G2} & \textbf{G3} & \textbf{G4} & \textbf{G5} & \textbf{G6} & \textbf{G7} & \textbf{G8} & \textbf{G9} & \textbf{G10} & \textbf{G11} & \textbf{G12} & \textbf{G13}& Comments \\ \hline\hline
+\rowcolor{gray!50}\textbf{Aufgabe 1:Sichtbarkeit} & 20& & & & & & & & & & & & & & \\\hline\hline
+01-05& 5& & & & & & & & & & & & & & \\ \hline
+06-10& 5& & & & & & & & & & & & & & \\ \hline
+11-15& 5& & & & & & & & & & & & & & \\ \hline
+Call-by-value vs Call-by-reference& 5& & & & & & & & & & & & & & \\ \hline
+\rowcolor{gray!50}\textbf{Aufgabe 2:Fibonacci} & 30& & & & & & & & & & & & & & \\\hline\hline
+Datenfelder nMinus1 + nMinus2& 2& & & & & & & & & & & & & & \\ \hline
+beide private& 2& & & & & & & & & & & & & & \\ \hline
+im Konstruktor initialisiert& 2& & & & & & & & & & & & & & \\ \hline
+Methode next, fn = fn-1 + fn-2, nMinus1/2 neu& 4& & & & & & & & & & & & & & \\ \hline
+FibonacciPrint mit Ausgabe bei Fehler& 3& & & & & & & & & & & & & & \\ \hline
+Anleitung/Help& 2& & & & & & & & & & & & & & \\ \hline
+einlesen Kommandozeilenparam (parseInt)& 3& & & & & & & & & & & & & & \\ \hline
+Formatierung Output& 4& & & & & & & & & & & & & & \\ \hline
+mit printf& 4& & & & & & & & & & & & & & \\ \hline
+JavaDoc, sprechende Varnamen etc.& 4& & & & & & & & & & & & & & \\ \hline
+\rowcolor{gray!50}\textbf{Aufgabe 3:Fraction} & 30& & & & & & & & & & & & & & \\\hline\hline
+Numer + Denom private& 1& & & & & & & & & & & & & & \\ \hline
+Konstruktor ein Arg& 1& & & & & & & & & & & & & & \\ \hline
+Verkettung mit anderem Konstruktor& 2& & & & & & & & & & & & & & \\ \hline
+Konstruktor zwei Args& 2& & & & & & & & & & & & & & \\ \hline
+Prüfen Nenner 0& 1& & & & & & & & & & & & & & \\ \hline
+ggT erzeugen& 1& & & & & & & & & & & & & & \\ \hline
+VZ-Test (auch implizit durch ggT)& 2& & & & & & & & & & & & & & \\ \hline
+Zuweisung, teilen durch GG & 2& & & & & & & & & & & & & & \\ \hline
+Multipl mit int, fraction, vielen frcts& 3& & & & & & & & & & & & & & \\ \hline
+Dividieren durch andere Fraction& 1& & & & & & & & & & & & & & \\ \hline
+Jeweils neue Fraction& 2& & & & & & & & & & & & & & \\ \hline
+toString& 1& & & & & & & & & & & & & & \\ \hline
+FractionTest alles durchprobiert (auch kürzen + VZ)& 4& & & & & & & & & & & & & & \\ \hline
+	extit{automatische Tests}& 4& & & & & & & & & & & & & & \\ \hline
+JavaDoc, sprechende Varnamen etc.& 4& & & & & & & & & & & & & & \\ \hline
+\rowcolor{gray!50}\textbf{Aufgabe 4:Fragen} & 20& & & & & & & & & & & & & & \\\hline\hline
+OO != OOP& 4& & & & & & & & & & & & & & \\ \hline
+Klasse, Objekt/Instanz& 4& & & & & & & & & & & & & & \\ \hline
+Klassenvariable, Instanzvariable& 2& & & & & & & & & & & & & & \\ \hline
+Klassenmethode, Instanzmethode& 2& & & & & & & & & & & & & & \\ \hline
+Identität von einem Objekt (this + this.)& 2& & & & & & & & & & & & & & \\ \hline
+Methodenkopf + Rumpf& 2& & & & & & & & & & & & & & \\ \hline
+Methodensignatur& 2& & & & & & & & & & & & & & \\ \hline
+Formaler vs aktueller Parameter& 2& & & & & & & & & & & & & & \\ \hline
+
+\rowcolor{gray!10}\textbf{Summe} & 100 & & & & & & & & & & & & & & \\ \hline
+\end{longtable}
+\begin{longtable}{l l }
+\textbf{G1: }Di, 11:00: Freya Berstermann, Irina Vortkamp\\\textbf{G2: }Di, 11:30: Felix Nardmann, Benjamin Tolksdorf\\
+\textbf{G3: }Di, 14:00: Daniel Stattkus, Rene Brinkhege\\\textbf{G4: }Di, 14:30: Daniel Pohl, Bianca Krömer\\
+\textbf{G5: }Di, 16:00: Darren Kopatz, Alexander Miller\\\textbf{G6: }Di, 11:00: Freya Berstermann, Irina Vortkamp\\
+\textbf{G7: }Di, 11:30: Felix Nardmann, Benjamin Tolksdorf\\\textbf{G8: }Di, 14:00: Daniel Stattkus, Rene Brinkhege\\
+\textbf{G9: }Di, 14:30: Daniel Pohl, Bianca Krömer\\\textbf{G10: }Di, 16:00: Darren Kopatz, Alexander Miller\\
+\textbf{G11: }Di, 14:00: Daniel Stattkus, Rene Brinkhege\\\textbf{G12: }Di, 14:30: Daniel Pohl, Bianca Krömer\\
+\textbf{G13: }Di, 16:00: Darren Kopatz, Alexander Miller\\
+\end{longtable}
+  \end{document}
