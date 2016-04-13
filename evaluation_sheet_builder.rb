@@ -37,7 +37,7 @@ file_name = "#{course}_Blatt_#{sheet_number}.tex"
 File.open(file_name , 'w') do |file|
 
   file.print '
-  \documentclass[a4paper, 10pt, landscape]{scrartcl}
+  \documentclass[a4paper, 10pt]{scrartcl}
   \usepackage[utf8]{inputenc}
   \usepackage[ngerman]{babel}
   \usepackage{amsfonts}
@@ -64,28 +64,27 @@ File.open(file_name , 'w') do |file|
       $groups_counter = MAX_GROUPS_PER_PAGE * page
       file.print "
       #{($groups_counter > 0 and $groups_left == 10) ? '\tiny' : '\small'} \n"
-      file.print '\begin{longtable}{|p{6cm}|' + "c|" * ($groups_left + 1) + 'p{8cm}|}\\hline'
+      file.print '\begin{longtable}{|p{10cm}|' + "c|" * ($groups_left + 1) + '}\\hline'
 
       file.print "\n" + '& \\textbf{P}'
 
       for i in (1..$groups_left)
         file.print ' & \textbf{G' + (i + $groups_counter).to_s + '}'
       end
-      file.print '& Comments \\\\ \hline\hline' 
-      file.print "\n"
+      file.print('\\\\' + "\n")
 
       for i in (0...exercises.size)
-        file.print '\rowcolor{gray!50}\textbf{Aufgabe ' + (i+1).to_s + ':' + exercises[i]['text'].to_s + '} & ' + exercises[i]['points'].to_s + ("& " * $groups_left) + '& \\\\'
+        file.print '\rowcolor{gray!50}\textbf{Aufgabe ' + (i+1).to_s + ':' + exercises[i]['text'].to_s + '} & ' + exercises[i]['points'].to_s + ("& " * $groups_left) + '\\\\'
         file.print '\hline' * 2
         file.print "\n"
         for j in (0...exercises[i]['subtasks'].size)
           subtask = exercises[i]['subtasks'][j]
-          file.print subtask['text'].to_s + '& ' + subtask['points'].to_s + ('& ' * $groups_left) + '& \\\\ \hline' + "\n"
+          file.print subtask['text'].to_s + '& ' + subtask['points'].to_s + ('& ' * $groups_left) + '\\\\ \hline' + "\n"
         end
       end
 
       file.print "\n"
-      file.print '\rowcolor{gray!10}\textbf{Summe} & 100 ' + ('& ' * $groups_left)  + '& \\\\ \hline' + "\n" + '\end{longtable}' + "\n"
+      file.print '\rowcolor{gray!10}\textbf{Summe} & 100 ' + ('& ' * $groups_left)  + '\\\\ \hline' + "\n" + '\end{longtable}' + "\n"
 
       #table of names under the points table
       names_rows = ($groups_left + 1) / 2
