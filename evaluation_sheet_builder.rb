@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
 require 'json'
+require 'to_latex'
 
 puts
 puts "json2TeX Evaluation Sheet Builder"
@@ -74,12 +75,12 @@ File.open(file_name , 'w') do |file|
       file.print('\\\\' + "\n")
 
       for i in (0...exercises.size)
-        file.print '\rowcolor{gray!50}\textbf{Aufgabe ' + (i+1).to_s + ':' + exercises[i]['text'].to_s + '} & ' + exercises[i]['points'].to_s + ("& " * $groups_left) + '\\\\'
+        file.print '\rowcolor{gray!50}\textbf{Aufgabe ' + (i+1).to_s + ':' + %Q[#{exercises[i]['text'].to_latex}] + '} & ' + exercises[i]['points'].to_s + ("& " * $groups_left) + '\\\\'
         file.print '\hline' * 2
         file.print "\n"
         for j in (0...exercises[i]['subtasks'].size)
           subtask = exercises[i]['subtasks'][j]
-          file.print subtask['text'].to_s + '& ' + subtask['points'].to_s + ('& ' * $groups_left) + '\\\\ \hline' + "\n"
+          file.print %Q[#{subtask['text'].to_latex}] + '& ' + subtask['points'].to_s + ('& ' * $groups_left) + '\\\\ \hline' + "\n"
         end
       end
 
@@ -122,7 +123,7 @@ puts
 puts "pdflatex #{course}_Blatt_#{sheet_number}.tex"
 
 # pdflatex runs silently, but you also don't see errors this way
-system "pdflatex '#{file_name}' >/dev/null"
+system "pdflatex '#{file_name}'"
 system "pdflatex '#{file_name}' >/dev/null"
 
 puts
