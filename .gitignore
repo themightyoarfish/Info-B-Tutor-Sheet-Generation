@@ -158,3 +158,6 @@ pythontex-files-*/
 # Latexian
 TSWLatexianTemp*
 *.json
+
+*.pdf 
+*.tex
