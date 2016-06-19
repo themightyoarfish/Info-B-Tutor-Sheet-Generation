@@ -157,4 +157,4 @@ pythontex-files-*/
 
 # Latexian
 TSWLatexianTemp*
-b1.json
+*.json
